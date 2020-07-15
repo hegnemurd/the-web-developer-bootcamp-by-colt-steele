@@ -1,0 +1,19 @@
+body {
+  color: red;
+}
+
+ul {
+  color: lightcoral;
+}
+
+li {
+  color: royalblue;
+}
+
+.highlight {
+  color: yellow;
+}
+
+#different {
+  color: lightgreen;
+}

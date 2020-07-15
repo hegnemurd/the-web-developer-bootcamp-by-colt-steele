@@ -1,0 +1,15 @@
+body {
+  background-color: beige;
+}
+
+li {
+  border: 1px dashed royalblue;
+}
+
+#not-a-proper-todo {
+  background-color: silver;
+}
+
+.done {
+  text-decoration: line-through;
+}

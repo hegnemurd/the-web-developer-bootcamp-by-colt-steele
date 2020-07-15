@@ -1,0 +1,23 @@
+h1 {
+  color: orangered;
+  /* border-color: royalblue;
+  border-width: 5px;
+  border-style: groove; */
+  border: 1px groove royalblue;
+}
+
+h4 {
+  color: rgb(236, 63, 193);
+  background: black;
+}
+
+li {
+  color: orange;
+}
+
+body {
+  background: peachpuff;
+  /* background: url(https://lh3.googleusercontent.com/proxy/l6Yu-j1Ek0nD6X6gilGDVKfB8s2-KYjY2p49oidfPVsHZjlPgQOqwtLT6Az7CE0JrIN4WeNBY4OQh-KN8GfjaOwxxWd-BbjWBzxVPubF);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}

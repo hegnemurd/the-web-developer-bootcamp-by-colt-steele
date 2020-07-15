@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selected Inputs</title>
+  </head>
+  <body>
+    <p>Do you prefer strawberries or blueberries?</p>
+    <form action="">
+      <label for="strawberries">Strawberries:</label>
+      <input
+        name="berryChoice"
+        id="strawberries"
+        type="radio"
+        value="strawberries"
+      />
+
+      <label for="blueberries">Blueberries:</label>
+      <input
+        name="berryChoice"
+        id="blueberries"
+        type="radio"
+        value="blueberries"
+      />
+
+      <p>What is your favourite vegetables?</p>
+      <select name="vegetables">
+        <option value="carrots">🥕</option>
+        <option value="tomatoes">🍅</option>
+        <option value="potatoes"> 🥔 </option>
+        <option value="cucumber"> 🥒 </option>
+      </select>
+
+      <textarea name="paragraph" cols="20" rows="10"></textarea>
+
+      <button>Done!</button>
+    </form>
+  </body>
+</html>

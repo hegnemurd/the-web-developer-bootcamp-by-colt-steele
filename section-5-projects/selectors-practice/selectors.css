@@ -1,0 +1,48 @@
+/* Element */
+h4 {
+  color: red;
+}
+
+/* Class */
+.hello {
+  color: royalblue;
+}
+
+/* Id */
+#name {
+  border: 1px solid orange;
+}
+
+/* Star */
+* {
+  font: 1em sans-serif;
+}
+
+/* Descendant Selector */
+li a {
+  color: hotpink;
+}
+
+/* Adjacent Selector */
+h4 + ul {
+  border: 4px dashed plum;
+}
+
+/* Attribute Selector */
+a[href="http://www.google.com"]
+{
+  background-color: powderblue;
+}
+
+input[type="text"] {
+  background-color: sandybrown;
+}
+
+/* nth of type */
+ul:nth-of-type(3) {
+  background-color: turquoise;
+}
+
+li:nth-of-type(2) {
+  background-color: wheat;
+}
