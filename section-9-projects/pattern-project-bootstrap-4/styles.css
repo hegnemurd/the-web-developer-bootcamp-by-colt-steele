@@ -1,0 +1,12 @@
+/* making the background on the header bigger and 
+thus seeing more of the bricks, 
+but I preffered leaving it more close up 
+rather than further with more bricks
+
+ #header {
+  background: url("./header.jpeg") center center / cover no-repeat;
+} */
+
+#header {
+  background: url("./header.jpeg");
+}
