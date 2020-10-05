@@ -24,13 +24,13 @@ console.log(
 );
 console.log("Type in this bit of code and press enter:");
 console.log(
-  'var posts = [ { title: "Programming Popularity Around The World", author: "Jane Doe, comments: [ "Interesting.", "I do not agree with the 3rd point.", "Excellent article! Very enlightening.", ], }, { title: "How Computers Changed The World", author: "John Doe", comments: [ "I wonder how it will change the future.", "What happened if computers were not invented.", "I cannot imagine a life without it.", ], }, ];'
+  'var posts = [ { title: "Programming Popularity Around The World", author: "Jane Doe", comments: [ "Interesting.", "I do not agree with the 3rd point.", "Excellent article! Very enlightening.", ], }, { title: "How Computers Changed The World", author: "John Doe", comments: [ "I wonder how it will change the future.", "What happened if computers were not invented.", "I cannot imagine a life without it.", ], }, ];'
 );
 console.log(
   "If you would like to access the object fully you can type in 'posts[0]'."
 );
 console.log(
-  "If you would like to access the the first objects first value 'object.[0].title' (syntax: object[0].firstValueName)."
+  "If you would like to access the the first objects first value 'posts[0].title' (syntax: object[0].firstValueName)."
 );
 console.log(
   "If you would like to access the second comment in the second object type in 'posts[1].comments[1]'."
