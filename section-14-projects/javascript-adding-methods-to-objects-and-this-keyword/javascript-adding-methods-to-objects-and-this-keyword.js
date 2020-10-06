@@ -1,3 +1,7 @@
+console.log("ADDING METHODS TO AN OBJECT");
+console.log("+");
+console.log("NAMESPACING");
+
 console.log("Let's make an object:");
 console.log(
   "var obj = { name: 'Linda', age: 63, isCool: true, friends: ['Marta', 'Susan'], add: function(x, y){ return x + y; } }"
@@ -27,3 +31,27 @@ console.log("var catSpace = {}");
 console.log("catSpace.speak = function() { return 'Meow';}");
 console.log("Call the speak function:");
 console.log("catSpace.speak()");
+
+console.log(
+  "********************************************************************"
+);
+
+console.log("THE KEYWORD THIS");
+
+console.log("Let's make a variable called comments:");
+console.log("var comments = {};");
+console.log("Now let's add some data to this object:");
+console.log("comments.data = ['Good Job!', 'Well Done!', 'Good Work!'];");
+console.log("Let's make a function that prints all the comments in the array:");
+console.log(
+  "function print(array){ array.forEach(function(el){ console.log(el);}); }"
+);
+console.log("Now when you call the function it will return you the array:");
+console.log("print(comments.data)");
+
+console.log("Let's do the function using this keyword:");
+console.log(
+  "comments.print = function(){ this.data.forEach(function(el){ console.log(el); }); }"
+);
+console.log("Now to see the comments printed out call the function:");
+console.log("comments.print()");
