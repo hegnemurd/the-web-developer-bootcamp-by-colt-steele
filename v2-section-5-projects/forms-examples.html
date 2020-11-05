@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Examples</title>
+  </head>
+  <body>
+    <h1>Forms Examples</h1>
+    <!-- file://submit?username=user1&password=1234&color=%23e21212&num=76 -->
+    <form action="/submit">
+      <p>
+        <label for="username">Enter a Username:</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter a Password:</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="colour">Choose a Colour:</label>
+        <input id="colour" type="color" name="color" />
+      </p>
+      <p>
+        <label
+          >Enter a Number:<input
+            type="number"
+            placeholder="Enter A Number"
+            name="num"
+            min="1"
+            max="1 000 000 000 000"
+        /></label>
+      </p>
+      <button>Submit</button>
+      <!-- <button type="button">Please do not submit the form</button> -->
+      <!-- <input type="submit" value="Submit Form" /> -->
+
+      <h2>Search For Something In Either Reddit, Google or Youtube.</h2>
+    </form>
+    <form action="https://www.reddit.com/search">
+      <input type="text" name="q" />
+      <button>search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" />
+      <button>Search youtube</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" />
+      <label for="agree">I agree to everything</label>
+      <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs" />
+        <label for="s">S:</label>
+        <input type="radio" name="size" id="s" value="s" />
+        <label for="m">M:</label>
+        <input type="radio" name="size" id="m" value="m" />
+      </p>
+      <p>
+        <label for="cake">Please Select a Cake Flavour</label>
+        <select name="cake" id="cake">
+          <option value="vanilla">Vanilla</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="red velvet" selected>Red Velvet</option>
+        </select>
+      </p>
+      <p>
+        <label for="layers">How Many Layers Would You Like?</label>
+        <input type="range" id="layers" min="0" max="4" name="layers" />
+        <!-- can add step="5" to input so it moves 5 every time it is moved -->
+      </p>
+      <p>
+        <label for="requests">Any Special Requests?</label>
+        <br />
+        <textarea name="requests" id="requests" cols="30" rows="10"></textarea>
+      </p>
+      <button>Submit</button>
+
+      <h2>Validations Examples</h2>
+      <form action="/examples">
+        <label for="first">First Name:</label>
+        <input type="text" name="first" id="first" name="first" required />
+        <p>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            minlength="5"
+            maxlength="20"
+            required
+          />
+        </p>
+        <p>
+          <input type="email" required />
+          <input type="url" />
+        </p>
+        <button>Submit</button>
+      </form>
+    </form>
+  </body>
+</html>
