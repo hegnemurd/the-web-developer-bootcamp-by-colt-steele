@@ -47,6 +47,16 @@
 //     return movie.title
 // });
 
+// MAP EXERCISE
+
+// function cleanNames(names) {
+//   return names.map(function (name) {
+//     return name.trim();
+//   });
+// }
+
+// cleanNames([" Ralph ", " Cruella ", " Jessie ", " Little Bo-Beep ", " Elsa "]);
+
 // ********** OUTPUT TO CONSOLE **********
 
 console.log("********** FOREACH **********");
@@ -79,3 +89,18 @@ console.log(
   "const titles = movies.map(function (movie) { return movie.title });"
 );
 console.log("Type in: titles");
+
+console.log("MAP EXERCISE:");
+console.log(
+  "function cleanNames(names) { var result = names.map(function (name) { return name.trim(); }); return result; }"
+);
+console.log(
+  "Then call it: cleanNames([' Ralph ', ' Cruella ', ' Jessie ', ' Little Bo-Beep ', ' Elsa ']);"
+);
+console.log("SHORTER VERSION WOULD BE:");
+console.log(
+  "function cleanNames(names) { return names.map(function (name) { return name.trim(); }); } "
+);
+console.log(
+  "Then call it: cleanNames([' Ralph ', ' Cruella ', ' Jessie ', ' Little Bo-Beep ', ' Elsa ']);"
+);
