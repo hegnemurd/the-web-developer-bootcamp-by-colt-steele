@@ -1,0 +1,11 @@
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
+}
+
+.image {
+  width: 400px;
+}
