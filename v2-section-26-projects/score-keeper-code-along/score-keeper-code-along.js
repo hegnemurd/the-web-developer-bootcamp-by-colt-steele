@@ -3,17 +3,12 @@ const pOne = {
   button: document.querySelector("#pOneButton"),
   display: document.querySelector("#pOneDisplay"),
 };
-
 const pTwo = {
   score: 0,
   button: document.querySelector("#pTwoButton"),
   display: document.querySelector("#pTwoDisplay"),
 };
 
-// const pOneButton = document.querySelector("#pOneButton");
-// const pTwoButton = document.querySelector("#pTwoButton");
-// const pOneDisplay = document.querySelector("#pOneDisplay");
-// const pTwoDisplay = document.querySelector("#pTwoDisplay");
 const resetButton = document.querySelector("#reset");
 const winningScoreSelect = document.querySelector("#playTo");
 let winningScore = 3;
@@ -25,13 +20,42 @@ function updateScores(player, opponent) {
     if (player.score === winningScore) {
       isGameOver = true;
       player.display.classList.add("winner");
-      opponent.displayclassList.add("loser");
+      opponent.display.classList.add("loser");
       player.button.disabled = true;
       opponent.button.disabled = true;
     }
     player.display.textContent = player.score;
   }
 }
+
+pOne.button.addEventListener("click", function () {
+  updateScores(pOne, pTwo);
+});
+pTwo.button.addEventListener("click", function () {
+  updateScores(pTwo, pOne);
+});
+
+winningScoreSelect.addEventListener("change", function () {
+  winningScore = parseInt(this.value);
+  reset();
+});
+
+resetButton.addEventListener("click", reset);
+
+function reset() {
+  isGameOver = false;
+  for (let p of [pOne, pTwo]) {
+    p.score = 0;
+    p.display.textContent = 0;
+    p.display.classList.remove("winner", "loser");
+    p.button.disabled = false;
+  }
+}
+
+// const pOneButton = document.querySelector("#pOneButton");
+// const pTwoButton = document.querySelector("#pTwoButton");
+// const pOneDisplay = document.querySelector("#pOneDisplay");
+// const pTwoDisplay = document.querySelector("#pTwoDisplay");
 
 // pOneButton.addEventListener("click", function () {
 //   if (!isGameOver) {
@@ -61,31 +85,6 @@ function updateScores(player, opponent) {
 //     pTwoDisplay.textContent = pTwoScore;
 //   }
 // });
-
-pOne.button.addEventListener("click", function () {
-  updateScores(pOne, pTwo);
-});
-
-pTwo.button.addEventListener("click", function () {
-  updateScores(pTwo, pOne);
-});
-
-winningScoreSelect.addEventListener("change", function () {
-  winningScore = parseInt(this.value);
-  reset();
-});
-
-resetButton.addEventListener("click", reset);
-
-function reset() {
-  isGameOver = false;
-  for (let p of [pOne, pTwo]) {
-    p.score = 0;
-    p.display.textContent = 0;
-    p.display.classList.remove("winner", "loser");
-    p.button.disabled = false;
-  }
-}
 
 // function reset() {
 //   isGameOver = false;
