@@ -1,20 +1,20 @@
-// const fs = require("fs");
-// const folderName = process.argv[2] || "Project";
+const fs = require("fs");
+const folderName = process.argv[2] || "Project";
 
-// fs.mkdir("Apples", { recursive: true }, (err) => {
-//   console.log("I'm in the callback");
-//   if (err) throw err;
-// });
+fs.mkdir("Apples", { recursive: true }, (err) => {
+  console.log("I'm in the callback");
+  if (err) throw err;
+});
 
-// try {
-//   fs.mkdirSync(folderName);
-//   fs.writeFileSync(`${folderName}/index.html`, "");
-//   fs.writeFileSync(`${folderName}/app.js`, "");
-//   fs.writeFileSync(`${folderName}/styles.css`, "");
-// } catch (e) {
-//   console.log("Something went wrong");
-//   console.log(e);
-// }
+try {
+  fs.mkdirSync(folderName);
+  fs.writeFileSync(`${folderName}/index.html`, "");
+  fs.writeFileSync(`${folderName}/app.js`, "");
+  fs.writeFileSync(`${folderName}/styles.css`, "");
+} catch (e) {
+  console.log("Something went wrong");
+  console.log(e);
+}
 
 console.log("I made this file using the terminal.");
 console.log("I used this file to create a new folder using the terminal.");

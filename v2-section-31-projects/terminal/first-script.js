@@ -1,2 +1,2 @@
-// console.log("hello from js");
-// console.log(process.argv);
+console.log("hello from js");
+console.log(process.argv);
